@@ -1,0 +1,181 @@
+$title-font: 'Verdana';
+$body-font: 'Open Sans', sans-serif;
+$body-color: #797979;
+$title-color: #111111;
+$title-color-white: #ffffff;
+$title-color-hover: #ff533d;
+$button-color: #006cf7;
+$footer-color: #818d9a;
+$star-color: #ffc107;
+$green-main: #8ab23f;
+$bg-three: #f9f9f9;
+$font-weight: bold;
+$text-transform: capitalize;
+$text-uppercse: uppercase;
+$transition: all 0.5s;
+
+.modal{
+    z-index: 1160;
+}
+.sign-in-modal{
+    .modal-content{
+        background-color: transparent;
+        border: none;
+    }
+    .sign-up-wrapper{
+        width: 100%;
+        float: left;
+        display: flex;
+        align-items: center;
+        background-color: $title-color-white;
+        .sign-up-head{
+            width: 50%;
+            float: left;
+            .sign-up-img{
+                background-image: url('../images/bg-sign.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+                height: 665px;
+                text-align: center;
+                .sign-social{
+                    display: inline-block;
+                    position: absolute;
+                    bottom: 80px;
+                    transform: translateX(-50%);
+                    a{
+                        background-color: #3c5a96;
+                        border-radius: 5px;
+                        padding: 12px 56px;
+                        color: $title-color-white;
+                        display: block;
+                        text-align: center;
+                        &:last-child{
+                            background-color: $title-color-hover;
+                            margin-top: 30px;
+                        }
+                    }
+                }
+            }
+        }
+        .sign-up-content{
+            width: 50%;
+            float: left;
+              .btn-modal-cross{
+                  position: absolute;
+                  top:7%;
+                  right:5%;
+              }
+            .sign-up-pera{
+                padding: 0 30px;
+                h5{
+                    text-align: center;
+                }
+                form{
+                    position: relative;
+                    padding: 40px 0px 0;
+                    input{
+                        width: 100%;
+                        height: 45px;
+                        padding: 10px;
+                        border: 1px solid #8080803b;
+                        border-radius: 5px;
+                        position: relative;
+                        margin-bottom: 30px;
+                    }
+                    span{
+                        position: absolute;
+                        right: 20px;
+                        top: 50px;
+                        i{
+                            color: $title-color-hover;
+                        }
+                    }
+                    .form-pwd{
+                        position: absolute;
+                        top: 125px;
+                    }
+                    .form-email2{
+                        top: 126px;
+                    }
+                    .con-pwd{
+                        top: 280px;
+                    }
+                    .form-pwd2{
+                        top: 200px;
+                    }
+                    .form-check{
+                        // text-align: center;
+                        input{
+                            width: auto;
+                            height: auto;
+                            float: none;
+                            &:focus{
+                                box-shadow: none;
+                            }
+                        }
+                        label{
+                            margin-top: 6px;
+                        }
+                        a{
+                            position: absolute;
+                            right:0;
+                            color: $title-color-hover;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                .sign-in-btn{
+                    border: 1px solid $title-color-hover;
+                    width: 100%;
+                    margin: 0;
+                    .sign-in-hvr{
+                        border: 70px solid $title-color-hover;
+                    }
+                    a{
+                        color: $title-color-white;
+                    }
+                    &:hover{
+                        .sign-in-hvr{
+                            border: 0px solid $title-color-hover;
+                        }
+                        a{
+                            color: $title-color-hover;
+                        }
+                    }
+                }
+                .sign{
+                    margin: 20px 0;
+                    text-align: center;
+                    float: left;
+                    width: 100%;
+                    p{
+                        text-align: center;
+                        a{
+                            color: $title-color-hover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//   index pages two  css  moadal start   // 
+.index-sign-modal{
+    .index-sign-modal-wrapper{
+           .sign-up-content .sign-up-pera form span i {
+            color: $button-color;
+        }
+        .sign-up-content .sign-up-pera form .form-check a {
+        color:$button-color;
+    }
+    .index-two-btn button {
+        border: 1px solid $button-color;
+        background-color:$button-color;
+    }
+    .sign-up-content .sign-up-pera .sign p a {
+        color: $button-color;
+    }
+  }
+}
+

@@ -1,0 +1,234 @@
+/*-------------------------------------
+    
+	Author: ratio
+	Copyright © 2021-22
+	
+---------------------------------------
+    
+    CSS INDEX
+    ===================
+	
+    1. BODY
+	2. CUSTOM CSS / A
+	3. PRELOADER
+	4. NAVIGATION
+	5. SLIDER
+
+---------------------------------------*/
+
+$title-font: 'Verdana';
+$body-font: 'Open Sans', sans-serif;
+$body-color: #797979;
+$title-color: #111111;
+$title-color-white: #ffffff;
+$title-color-hover: #ff533d;
+$button-color: #006cf7;
+$footer-color: #818d9a;
+$star-color: #ffc107;
+$green-main: #8ab23f;
+$bg-three: #f9f9f9;
+$font-weight: bold;
+$line-height: 25px;
+$text-transform: capitalize;
+$text-uppercse: uppercase;
+$transition: all 0.5s;
+
+
+
+/* ....................................
+1 Common CSS 
+.......................................*/
+@import 'common/common';
+
+/* ....................................
+2 Header CSS 
+.......................................*/
+@import 'header/header';
+
+/* ....................................
+3 Index-one CSS 
+.......................................*/
+@import 'index-one/index-one';
+
+/* ....................................
+4 Index-two CSS 
+.......................................*/
+@import 'index-two/index-two';
+
+/* ....................................
+5 Index-three CSS 
+.......................................*/
+@import 'index-three/index-three';
+
+/* ....................................
+6 About CSS 
+.......................................*/
+@import 'about/about';
+
+/* ....................................
+7 Sign-in CSS 
+.......................................*/
+@import 'sign-in/sign-in';
+
+/* ....................................
+8 Service-Detail CSS 
+.......................................*/
+@import 'service-detail/service-detail';
+
+/* ....................................
+9 Blog CSS 
+.......................................*/
+@import 'blog-right/blog-right';
+
+/* ....................................
+10 Blog-Single CSS 
+.......................................*/
+@import 'blog-single/blog-single';
+
+/* ....................................
+11 Sign-in CSS 
+.......................................*/
+@import 'sign-in/sign-in';
+
+/* ....................................
+12 Contact CSS 
+.......................................*/
+@import 'contact/contact';
+
+/* ....................................
+13 Project CSS 
+.......................................*/
+@import 'project/project';
+
+/* ....................................
+14 error-404 CSS 
+.......................................*/
+@import 'error-404/error-404';
+
+/* ....................................
+15 Footer CSS 
+.......................................*/
+@import 'footer/footer';
+
+
+
+.menu_fixed{
+	position:fixed !important;
+	top:0;
+	left:0;
+	right:0;
+	padding-top:0px !important;
+	padding-bottom:0px !important;
+	background-color: transparent !important;
+	z-index:100;
+    -o-box-shadow: 0px 0px 25px -10px;
+    -ms-box-shadow: 0px 0px 25px -10px;
+    -moz-box-shadow: 0px 0px 25px -10px;
+    -webkit-box-shadow: 0px 0px 25px -10px;
+    box-shadow: 0px 0px 25px -10px;
+}
+.menu_fixed .container.menu-back {
+    background: #282828a6;
+    max-width: 100%;
+}
+.menu_fixed_two{
+	position:fixed !important;
+	top:0;
+	left:0;
+	right:0;
+	padding-top:20px;
+	padding-bottom:20px;
+	background-color: $title-color-white !important;
+	z-index:100;
+    -o-box-shadow: 0px 0px 25px -10px;
+    -ms-box-shadow: 0px 0px 25px -10px;
+    -moz-box-shadow: 0px 0px 25px -10px;
+    -webkit-box-shadow: 0px 0px 25px -10px;
+    box-shadow: 0px 0px 25px -10px;
+}
+.menu_fixed_three{
+    position:fixed !important;
+	top:0;
+	left:0;
+	right:0;
+	padding:20px;
+	background-color: $title-color !important;
+	z-index:100;
+    -o-box-shadow: 0px 0px 25px -10px;
+    -ms-box-shadow: 0px 0px 25px -10px;
+    -moz-box-shadow: 0px 0px 25px -10px;
+    -webkit-box-shadow: 0px 0px 25px -10px;
+    box-shadow: 0px 0px 25px -10px;
+}
+
+
+/* ---------------------------------------------- /*
+ * return-to-top
+/* ---------------------------------------------- */
+
+#return-to-top {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+	background: $title-color-hover;
+    width: 50px;
+    height: 50px;
+	text-align: center;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 5px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+	z-index:1000;
+    -webkit-animation: jump 1s ease-in alternate infinite;
+    animation: jump 1s ease-in alternate infinite;
+}
+.return-two {
+    background-color: $button-color !important;
+}
+.return-three {
+    background-color: $green-main;
+}
+.return-three {
+    background-color: $green-main !important;
+}
+#return-to-top i {
+    color: #fff;
+	line-height: 50px;
+    font-size: 30px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+@-webkit-keyframes jump {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 50%, 0);
+    }
+}
+@keyframes jump {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 50%, 0);
+    }
+}

@@ -1,0 +1,84 @@
+$title-font: 'Verdana';
+$body-font: 'Open Sans', sans-serif;
+$body-color: #797979;
+$title-color: #111111;
+$title-color-white: #ffffff;
+$title-color-hover: #ff533d;
+$button-color: #006cf7;
+$footer-color: #818d9a;
+$star-color: #ffc107;
+$green-main: #8ab23f;
+$bg-three: #f9f9f9;
+$font-weight: bold;
+$text-transform: capitalize;
+$text-uppercse: uppercase;
+$transition: all 0.5s;
+
+.error-wrapper{
+    width: 100%;
+    height: 100%;
+    float: left;
+    .error-logo{
+        text-align: center;
+        padding: 50px 0;
+        width: 20%;
+        float: left;
+        height: 100%;
+        background-position: bottom center;
+        background-size: cover;
+        background-image: url('../images/bg-error.png');
+        background-repeat: no-repeat;
+    }
+    .error-content{
+        width: 80%;
+        float: left;
+        .error-head{
+            // padding: 70px 0 0 0;
+            h2{
+                letter-spacing: 20px;
+                font-size: 140px;
+                color: #ff533d;
+                text-align: center;
+            }
+            h3{
+                font-weight: $font-weight-regular;
+                text-align: center;
+                max-width: 560px;
+                margin: 0 auto;
+                span{
+                    font-weight: $font-weight;
+                }
+            }
+            .back-head{
+                margin: 25px 0;
+                .back-btn{
+                    border: 1px solid $title-color-hover;
+                    text-align: center;
+                    max-width: 171px;
+                    float: none;
+                    margin: 0 auto;
+                    .submit-two-btn-hvr{
+                        border: 70px solid $title-color-hover;
+                    }
+                    a{
+                        display: inline-block;
+                        padding: 0px 30px;
+                    }
+                    &:hover{
+                        .submit-two-btn-hvr{
+                            border: 0px solid $title-color-hover;
+                        }
+                        a{
+                            color: $title-color-hover;
+                        }
+                    }
+                }
+            }
+            .not-found-img{
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}

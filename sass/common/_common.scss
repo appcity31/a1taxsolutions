@@ -1,0 +1,690 @@
+/*--------------
+1.Theme default CSS
+--------------------------*/
+$title-font: 'Verdana';
+$body-font: 'Open Sans', sans-serif;
+$body-color: #797979;
+$title-color: #111111;
+$title-color-white: #ffffff;
+$title-color-hover: #ff533d;
+$button-color: #006cf7;
+$footer-color: #818d9a;
+$star-color: #ffc107;
+$green-main: #8ab23f;
+$bg-three: #f9f9f9;
+$font-weight: bold;
+$text-transform: capitalize;
+$text-uppercse: uppercase;
+$transition: all 0.5s;
+  
+$h1-font-size: 50px;
+$h2-font-size: 40px;
+$h3-font-size: 36px;
+$h4-font-size: 30px;
+$h5-font-size: 22px;
+$h6-font-size: 20px;
+
+$body-font-size: 16px;
+$font-size-14: 14px;
+$font-size-18: 18px;
+$font-size-20: 20px;
+$font-size-34: 34px;
+$font-size-44: 44px;
+$font-size-64: 64px;
+$font-size-60: 60px;
+
+$font-weight: 700;
+$font-weight-medium: 500;
+$font-weight-regular: 400;
+$transition: all 0.5s;
+
+$text-transform: uppercase;
+$text-capital: capitalize;
+
+h1{
+	font-size:$h1-font-size;
+}
+h2{
+	font-size:$h2-font-size;
+}
+h3{
+	font-size: $h3-font-size;
+}
+h4{
+	font-size: $h4-font-size;
+}
+h5{
+	font-size: $h5-font-size;
+}
+h6{
+	font-size: $font-size-20;
+}
+body, html {
+	width:100%;
+	height: 100%;
+	font-family: $body-font;
+	font-size: $body-font-size;
+	line-height: 23px;
+	color: $body-color;
+	-webkit-transition: $transition;
+    -o-transition: $transition;
+    -ms-transition: $transition;
+    -moz-transition: $transition;
+    transition: $transition;
+}
+a {
+	color: $body-color;
+	text-decoration: none;
+	-webkit-transition: $transition;
+    -o-transition: $transition;
+    -ms-transition: $transition;
+    -moz-transition: $transition;
+    transition: $transition;
+}
+i:before{
+	margin-left:0 !important;
+}
+a:hover, a:focus {
+	text-decoration: none;
+	color: $title-color;
+	outline: none;
+	-webkit-transition: $transition;
+    -o-transition: $transition;
+    -ms-transition: $transition;
+    -moz-transition: $transition;
+    transition: $transition;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: $title-font;
+	line-height: 1.1;
+	font-weight:$font-weight;
+	color: $title-color;
+	margin:0;
+	padding:0;
+}
+hr{
+	width: 100%;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
+	color: $title-color;
+	-webkit-transition: $transition;
+    -o-transition: $transition;
+    -ms-transition: $transition;
+    -moz-transition: $transition;
+    transition: $transition;
+}
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a{
+	-webkit-transition: $transition;
+    -o-transition: $transition;
+    -ms-transition: $transition;
+    -moz-transition: $transition;
+    transition: $transition;
+}
+p{
+	margin:0;
+}
+input, select, textarea {
+	outline: none;
+	// border: none;
+}
+input:focus, select:focus, button:focus, textarea:focus {
+	outline: none;
+	box-shadow:none;
+}
+.form-control{
+	border: none;
+	&:focus{
+		box-shadow: none;
+		outline: none;
+	}
+}
+.form-select{
+	&:focus{
+		box-shadow: none;
+	}
+}
+/*----- button ----- */
+
+.submit-two-btn{
+	margin: 30px 0 0 0;
+	border: 1px solid $button-color;
+	border-radius: 5px;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	position: relative;
+	box-sizing: border-box;
+	overflow: hidden;
+	-webkit-transition: $transition;
+	-o-transition: $transition;
+	-ms-transition: $transition;
+	-moz-transition: $transition;
+	transition: $transition;
+	.submit-two-btn-hvr {
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		border: 70px solid $button-color;
+		position: absolute;
+		transition: all .5s ease;
+		z-index: 1;
+		box-sizing: border-box;
+		-webkit-transition: $transition;
+		-o-transition: $transition;
+		-ms-transition: $transition;
+		-moz-transition: $transition;
+		transition: $transition;
+	}
+	a {
+		color: $title-color-white;
+		line-height: 50px;
+		transition: all .5s ease;
+		z-index: 2;
+		position: relative;
+		padding: 48px;
+	}
+	&:hover{
+		.submit-two-btn-hvr{
+			border: 0px solid $button-color;
+		}
+		a{
+			color: $button-color;
+		}
+	}
+}
+
+/*---- form-button -----*/
+
+.submit-form-btn{
+	margin: 30px 0 0 0;
+	padding: 2px 47px;
+	border: 1px solid $button-color;
+	border-radius: 5px;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	position: relative;
+	box-sizing: border-box;
+	overflow: hidden;
+	-webkit-transition: $transition;
+	-o-transition: $transition;
+	-ms-transition: $transition;
+	-moz-transition: $transition;
+	transition: $transition;
+	.submit-form-btn-hvr {
+		left: 0;
+		top: 0;
+		right: 0;
+		position: absolute;
+		bottom: 0;
+		border: 70px solid $button-color;
+		transition: all .5s ease;
+		z-index: 8;
+		box-sizing: border-box;
+		-webkit-transition: all 0.5s;
+		-o-transition: all 0.5s;
+		-ms-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+		transition: all 0.5s;
+	}
+	.submit-btn {               
+		color: #fff;
+		line-height: 40px;
+		transition: all .5s ease;
+		z-index: 8;
+		position: relative;
+		padding: 0px !important;
+		background: transparent;
+		border: none;
+	}
+	&:hover{
+		.submit-form-btn-hvr{
+			border: 0px solid $button-color;
+		}
+		.submit-btn{
+			color: $button-color;
+		}
+	}
+}
+
+/*------ index-three-btn -------*/
+
+.get-three{
+	border: 1px solid $title-color-white;
+	border-radius: 5px;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	position: relative;
+	box-sizing: border-box;
+	overflow: hidden;
+	-webkit-transition: $transition;
+	-o-transition: $transition;
+	-ms-transition: $transition;
+	-moz-transition: $transition;
+	transition: $transition;
+	.get-three-hvr {
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		border: 0px solid $title-color-white;
+		position: absolute;
+		transition: all .5s ease;
+		z-index: 1;
+		box-sizing: border-box;
+		-webkit-transition: $transition;
+		-o-transition: $transition;
+		-ms-transition: $transition;
+		-moz-transition: $transition;
+		transition: $transition;
+	}
+	a {
+		color: $title-color-white;
+		padding: 10px 14px;
+		transition: all .5s ease;
+		z-index: 2;
+		position: relative;
+		display: inline-block;
+	}
+	&:hover{
+		.get-three-hvr{
+			border: 70px solid $title-color-white;
+		}
+		a{
+			color: $green-main !important;
+		}
+	}
+}
+
+
+
+
+
+
+
+/*----- white-button ------*/
+
+.quote-two-btn{
+	margin: 30px 0 0 0;
+	border: 1px solid $button-color;
+	border-radius: 5px;
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+	position: relative;
+	box-sizing: border-box;
+	overflow: hidden;
+	-webkit-transition: $transition;
+	-o-transition: $transition;
+	-ms-transition: $transition;
+	-moz-transition: $transition;
+	transition: $transition;
+	.quote-two-btn-hvr {
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		border: 0px solid $button-color;
+		position: absolute;
+		transition: all .5s ease;
+		z-index: 1;
+		box-sizing: border-box;
+		-webkit-transition: $transition;
+		-o-transition: $transition;
+		-ms-transition: $transition;
+		-moz-transition: $transition;
+		transition: $transition;
+	}
+	a {
+		color: $title-color-white;
+		line-height: 50px;
+		transition: all .5s ease;
+		z-index: 2;
+		position: relative;
+		padding: 48px;
+	}
+	&:hover{
+		.quote-two-btn-hvr{
+			border: 70px solid $button-color;
+		}
+		a{
+			color: $title-color-white;
+		}
+	}
+}
+
+
+.submit-btn{
+	button{
+		border: 1px solid $title-color-hover;
+		width: 100%;
+		border-radius: 5px;
+		padding: 10px;
+		background-color: $title-color-hover;
+		color: $title-color-white;
+	}
+}
+
+
+.fade-top {
+	-webkit-animation-name: fade-up;
+	animation-name: fade-up;
+	-webkit-animation-duration: 750ms;
+	animation-duration: 750ms;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+}
+@keyframes fade-up {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+
+
+
+
+ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.float_left{
+	float:left;
+	width:100%;
+}
+.ptb{
+	padding-bottom: 100px;
+}
+.ptt{
+	padding-top: 100px
+}
+.ptb-100{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+#sidebar2{
+	position: fixed;
+	display: block;
+	height: 100vh;
+	top: 0px;
+	left: -500px;
+	background-color: #111111;
+	box-shadow: 0px 0px 10px 0px rgba(77, 77, 77, 0.5);
+	overflow: scroll;
+	overflow-x: hidden;
+	z-index: 99999;
+	.logo{
+		width: 100%;
+		float: left;
+		text-align: center;
+		padding: 25px;
+	}
+	#cssmenu{
+		width: 340px;
+		.sidebar-two-head{
+			float: left;
+			width: 100%;
+			padding: 0 22px;
+			.sidebar-content{
+				h4{
+					color: $title-color-white;
+					font-size: 25px;
+				}
+				p{
+					margin: 15px 0;
+				}
+			}
+			.info-time{
+				ul{
+					li{
+						width: 100%;
+						float: left;
+						position: relative;
+						a{
+							padding: 12px 0px;
+							text-transform: capitalize;
+							display: flex;
+							color: $title-color-white;
+							width: 100%;
+							i{
+								margin-right: 8px;
+							}
+						}
+						&:hover{
+							a{
+								color: $title-color-hover;
+							}
+						}
+					    .index-two-anchor-link{
+							color: $title-color-white;
+							padding: 12px 0px;
+							text-transform: capitalize;
+							display: flex;
+							width: 100%;
+						}
+						&:hover{
+							a{
+								color:$button-color;
+							}
+						}
+					}
+				}
+			}
+			.social-side {
+				float: left;
+				width: 100%;
+				ul{
+					display: flex;
+					justify-content: center;
+					li{
+						border: 1px solid gray;
+						a{
+							padding: 15px 25px;
+							display: inline-block;
+						}
+						&:hover{
+							background-color: $title-color-hover;
+							border: 1px solid $title-color-hover;
+							a{
+								color: $title-color-white;
+							}
+						}
+						.index-2-icon{
+							padding: 15px 25px;
+							display: inline-block;
+						}
+						&:hover{
+							background-color: $button-color;
+							border: 1px solid $button-color;
+							a{
+								color: $title-color-white;
+							}
+						}
+					}
+				}
+			}
+		}
+		}
+		#toggle-close2 {
+			float: left;
+			background: $title-color-hover;
+			padding: 15px 25px;
+			cursor: pointer;
+			color: $title-color-white;
+			position: absolute;
+            right: 0px;
+		}
+		.toggleClass{
+			background-color:$button-color !important;
+			float: left;
+			padding: 15px 25px;
+			cursor: pointer;
+			color: $title-color-white;
+			position: absolute;
+            right: 0px;
+			font-size: 30px;
+		}
+}
+#sidebar {
+	position: fixed;
+	display: block;
+	height: 100vh;
+	top: 0px;
+	left: -500px;
+	background-color: #111111;
+	box-shadow: 0px 0px 10px 0px rgba(77, 77, 77, 0.5);
+	overflow: scroll;
+	overflow-x: hidden;
+	z-index: 999;
+	.logo{
+		width: 100%;
+		float: left;
+		text-align: center;
+		padding: 25px;
+	}   
+	.serach-nav-wrap{
+		margin-top: 20px;
+		position:relative;
+		.search-box {
+		    margin: 12px 20px;
+			display: inline-block;  
+			input{
+				padding: 0px 24px;
+				height: 45px;
+			}
+			button{
+				border: none;
+				position: absolute;
+				right: 30px;
+				top: 70%;
+				background: none;
+			}
+		}
+	}                                                                  
+	#cssmenu{
+		width: 280px;
+		                                                                                              
+		ul{
+			li{
+				width: 100%;
+				float: left;
+				position: relative;
+				border-bottom: 1px solid $title-color-hover;
+				a{
+					padding: 16px 22px;
+					text-transform: capitalize;
+					display: inline-block;
+					color: $title-color-white;
+					width: 100%;
+				}
+				.head-button {
+					padding: 12px 15px;
+					border: 1px solid #ff533d;
+					border-radius: 5px;
+					float: left;
+					text-align: center;
+					margin: 15px;
+					cursor: pointer;
+					position: relative;
+					box-sizing: border-box;
+					overflow: hidden;
+					transition: all 0.5s;
+						.head-btn-hvr {
+							left: 0;
+							top: 0;
+							right: 0;
+							bottom: 0;
+							border: 70px solid #ff533d;
+							position: absolute;
+							transition: all 0.5s ease;
+							z-index: 1;
+							box-sizing: border-box;
+							transition: all 0.5s;
+						}
+						a {
+							color: #ffffff;
+							transition: all 0.5s ease;
+							z-index: 2;
+							position: relative;
+							padding: 0px !important;
+						}
+						&:hover a {
+							color: #ff533d;
+						}
+				 } 
+			}
+			.has-sub{
+				ul{
+					display: none;
+					li{
+						border-bottom: none;
+						border-top: 1px solid $title-color-hover;
+					}
+				}
+						&:before{
+							content: '';
+							position: absolute;
+							right: 20px;
+							top: 30px;
+							display: block;
+							width: 10px;
+							height: 2px;
+							background-color: $title-color-white;
+							-webkit-transition: all 0.1s ease-out;
+							-moz-transition: all 0.1s ease-out;
+							-ms-transition: all 0.1s ease-out;
+							-o-transition: all 0.1s ease-out;
+							transition: all 0.1s ease-out;
+						}
+						&::after{
+							content: '';
+							position: absolute;
+							right: 24px;
+							top: 26px;
+							display: block;
+							height: 10px;
+							width: 2px;
+							background-color: $title-color-white;
+							-webkit-transition: all 0.1s ease-out;
+							-moz-transition: all 0.1s ease-out;
+							-ms-transition: all 0.1s ease-out;
+							-o-transition: all 0.1s ease-out;
+							transition: all 0.1s ease-out;
+						}
+				}
+				.open{
+					&:before{
+						-webkit-transform: rotate(45deg);
+						-moz-transform: rotate(45deg);
+						-ms-transform: rotate(45deg);
+						-o-transform: rotate(45deg);
+						transform: rotate(45deg);
+					}
+					&:after{
+						-webkit-transform: rotate(45deg);
+						-moz-transform: rotate(45deg);
+						-ms-transform: rotate(45deg);
+						-o-transform: rotate(45deg);
+						transform: rotate(45deg);
+					}
+			}
+			}
+		}
+		#toggle-close{
+		position: absolute;
+		z-index: 100;
+		right: 10px;
+		top: 20px;
+		font-size: 35px;
+		color: #ffffff;
+		cursor: pointer;
+		}
+}

@@ -1,0 +1,87 @@
+$title-font: 'Verdana';
+$body-font: 'Open Sans', sans-serif;
+$body-color: #797979;
+$title-color: #111111;
+$title-color-white: #ffffff;
+$title-color-hover: #ff533d;
+$button-color: #006cf7;
+$footer-color: #818d9a;
+$star-color: #ffc107;
+$green-main: #8ab23f;
+$bg-three: #f9f9f9;
+$font-weight: bold;
+$text-transform: capitalize;
+$text-uppercse: uppercase;
+$transition: all 0.5s;
+
+.contact-wrapper{
+    .contact-head{
+        padding-bottom: 60px;
+        h3{
+            position: relative;
+            padding-bottom: 20px;
+            &::before{
+                content: '';
+                position: absolute;
+                display: block;
+                background-color: $title-color-hover;
+                width: 140px;
+                height: 3px;
+                bottom: 0;
+                left: 0px;
+            }
+        }
+    }
+    .contact-main-box{
+        border: 2px solid #80808063;
+        padding: 24px;
+        background-color: $title-color-white;
+        -webkit-transition: $transition;
+        -o-transition: $transition;
+        -ms-transition: $transition;
+        -moz-transition: $transition;
+        transition: $transition;
+        .contact-box-img{
+            border: 2px solid #80808063;
+            background-color: $title-color-white;
+            text-align: center;
+            width: 60px;
+            display: block;
+            margin: 0 auto;
+            i{
+                line-height: 60px;
+            }
+        }
+        .contact-content{
+            text-align: center;
+            padding: 20px 0;
+            p{
+                padding: 15px 0 0 0;
+            }
+        }
+        &:hover{
+            background-color: $title-color-hover;
+            border: 2px solid $title-color-hover;
+            .contact-box-img{
+                border: 2px solid $title-color-white;
+                i{
+                    color: $title-color-hover;
+                }
+            }
+            .contact-content{
+                h5{
+                    color: $title-color-white;
+                }
+                a{
+                    color: $title-color-white;
+                }
+                color: $title-color-white;
+            }
+        }
+    }
+}
+.contact-map{
+    iframe{
+        width: 100%;
+    }
+}

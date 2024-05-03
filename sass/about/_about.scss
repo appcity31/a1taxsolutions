@@ -1,0 +1,101 @@
+$title-font: 'Verdana';
+$body-font: 'Open Sans', sans-serif;
+$body-color: #797979;
+$title-color: #111111;
+$title-color-white: #ffffff;
+$title-color-hover: #ff533d;
+$button-color: #006cf7;
+$footer-color: #818d9a;
+$star-color: #ffc107;
+$green-main: #8ab23f;
+$bg-three: #f9f9f9;
+$font-weight: bold;
+$text-transform: capitalize;
+$text-uppercse: uppercase;
+$transition: all 0.5s;
+
+.inner-bg-page{
+    background-image: url('../images/bg-about.jpg');
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-position: right;
+    .about-header{
+        // background-color: #282828a6;
+        top: 0;
+    }
+    .inner-page-wrapper{
+        padding: 150px 0;
+        color: $title-color-white;
+        .inner-head{
+            h2{
+                text-align: center;
+                color: $title-color-white;
+            }
+        }
+        .inner-menu{
+            padding: 8px 0 0 0;
+            ul{
+                text-align: center;
+                li{
+                    display: inline-block;
+                    a{
+                        color: $title-color-white;
+                        &:hover{
+                            color: $title-color-hover;
+                        }
+                    }
+                    i{
+                        margin: 0px 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+/*-------- inner-about -------*/
+.inner-about-wrapper{
+    position: relative;
+    &::before{
+        content: url('../images/design-about.png');
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    .inner-about-img{
+        img{
+            width: 100%;
+        }
+    }
+    .inner-about-content{
+        h3{
+            font-weight: $font-weight-medium;
+            position: relative;
+            padding-bottom: 20px;
+            &::before{
+                content: '';
+                display: block;
+                position: absolute;
+                background-color: $title-color-hover;
+                width: 100px;
+                height: 3px;
+                bottom: 0;
+            }
+        }
+        p{
+            padding: 20px 0;
+            max-width: 484px;
+            &:nth-child(3){
+                padding: 0px;
+            }
+        }
+        .about-signature{
+            text-align: right;
+            img{
+                display: block;
+                margin: 0 0 0 auto;
+            }
+        }
+    }
+}

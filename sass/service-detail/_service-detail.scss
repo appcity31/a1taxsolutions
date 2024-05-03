@@ -1,0 +1,525 @@
+$title-font: 'Verdana';
+$body-font: 'Open Sans', sans-serif;
+$body-color: #797979;
+$title-color: #111111;
+$title-color-white: #ffffff;
+$title-color-hover: #ff533d;
+$button-color: #006cf7;
+$footer-color: #818d9a;
+$star-color: #ffc107;
+$green-main: #8ab23f;
+$bg-three: #f9f9f9;
+$font-weight: bold;
+$text-transform: capitalize;
+$text-uppercse: uppercase;
+$transition: all 0.5s;
+
+.inner-side-section{
+    &.inner-page{
+        background-color: #f8f8f8;
+    }
+    .sidebar-wrapper{
+        // background-color: #f8f8f8;
+        .sidebar-search{
+            input{
+                padding: 15px 30px;
+                width: 100%;
+                height: 50px;
+                border: 1px solid #80808059;
+            }
+            span{
+                position: relative;
+                i{
+                    position: absolute;
+                    right: 20px;
+                    line-height: 55px;
+                }
+            }
+        }
+        .categories-wrapper{
+            padding: 35px 0;
+            .category-content{
+                ul {
+                    padding: 30px 0;
+                    li{
+                        border-bottom: 1px solid #e8e4e4;
+                        a{
+                            padding: 20px;
+                            display: inline-block;
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                        .active{
+                            color:$title-color-hover;
+                        }
+                        &:hover{
+                            a{
+                                color: $title-color-hover;
+                                -webkit-transition: $transition;
+                                -o-transition: $transition;
+                                -ms-transition: $transition;
+                                -moz-transition: $transition;
+                                transition: $transition;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .recent-post-wrapper{
+            .recent-content{
+                padding: 30px 0;
+                .post-wrapper{
+                    display: flex;
+                    align-items: center;
+                    padding: 20px 0;
+                    border-bottom: 1px solid #e8e4e4;
+                    .post-content{
+                        margin-left: 22px;
+                        span{
+                            i{
+                                margin-right:10px;
+                            }
+                        }
+                        p{
+                            padding-top: 5px;
+                           a{
+                              font-weight: 600;
+                           }
+                        }
+                    }
+                }
+            }
+        }
+        .tag-wrapper{
+            .tags{
+                padding: 30px 0;
+                // background-color: #f8f8f8;
+                a{
+                    width: auto;
+                    float: left;
+                    border: 1px solid #ededed;
+                    padding: 8px 27px;
+                    margin-top: 15px;
+                    margin-right: 10px;
+                    -webkit-transition: $transition;
+                    -o-transition: $transition;
+                    -ms-transition: $transition;
+                    -moz-transition: $transition;
+                    transition: $transition;
+                    &:hover{
+                        background-color: $title-color-hover;
+                        border: 1px solid  $title-color-hover;
+                        color: $title-color-white;
+                    }
+                }
+            }
+        }
+        .social-icon-wrapper{
+            .social-icon{
+                padding: 30px 0;
+                ul{
+                    display: flex;
+                    justify-content: center;
+                    li{
+                        float: left;
+                        display: inline-block;
+                        margin-right: 15px;
+                        a{
+                            background-color: #f4f4f4;
+                            border-radius: 50%;
+                            width: 36px;
+                            height: 36px;
+                            display: inline-block;
+                            text-align: center;
+                            line-height: 36px;
+                            -webkit-transition: $transition;
+                            -o-transition: $transition;
+                            -ms-transition: $transition;
+                            -moz-transition: $transition;
+                            transition: $transition;
+                        }
+                        &:hover{
+                            a{
+                                background-color: $title-color-hover;
+                                i{
+                                    color: $title-color-white;
+                                    -webkit-transition: $transition;
+                                    -o-transition: $transition;
+                                    -ms-transition: $transition;
+                                    -moz-transition: $transition;
+                                    transition: $transition;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .right-side-wrapper{
+        .right-img{
+            img{
+                width: 100%;
+            }
+        }
+        .finance-content{
+            padding: 30px 0;
+            h5{
+                padding-bottom: 30px;
+            }
+            p{
+                &:last-child{
+                    margin: 20px 0;
+                }
+            }
+        }
+        .benefit-content{
+            h5{
+                padding-bottom: 30px;
+            }
+        }
+        .booking-wrapper{
+            padding: 50px 0;
+            h5{
+                padding: 20px 40px;
+                color: $title-color-white;
+                font-weight: $font-weight-medium;
+                background-color: $title-color-hover;
+            }
+            .all-info{
+                background-color: $title-color-white;
+                .select-expert{
+                    padding: 0px 30px;
+                    background-color: $title-color-white;
+                    .expert-list{
+                        ul{
+                            column-count: 4;
+                            column-gap: 25px;
+                            width: 100%;
+                            li{
+                                .expert-img{
+                                    position: relative;
+                                    img{
+                                        width: 100%;
+                                    }
+                                    .expert-img-overlay{
+                                        position: absolute;
+                                        top: 50%;
+                                        left: 50%;
+                                        bottom: 50%;
+                                        right: 50%;
+                                        opacity: 0;
+                                        -webkit-transition: all 0.5s;
+                                        -o-transition: all 0.5s;
+                                        -ms-transition: all 0.5s;
+                                        -moz-transition: all 0.5s;
+                                        transition: all 0.5s;
+                                    }
+                                    &:hover{
+                                        .expert-img-overlay{
+                                            background-color: #ff533d9e;
+                                            opacity: 1;
+                                            top: 5px;
+                                            left: 10px;
+                                            right: 10px;
+                                            bottom: 5px;
+                                            -webkit-transition: all 0.5s;
+                                            -o-transition: all 0.5s;
+                                            -ms-transition: all 0.5s;
+                                            -moz-transition: all 0.5s;
+                                            transition: all 0.5s;
+                                            overflow: hidden;
+                                        }
+                                    }
+                                }
+                                span{
+                                    display: block;
+                                    margin: 0 auto;
+                                    text-align: center;
+                                    padding: 15px 0;
+                                    a{
+                                        color: $title-color;
+                                        font-weight: 600;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    form{
+                        padding: 50px 0;
+                        border-bottom: 1px solid;
+                        .form-expert{
+                            position: relative;
+                            margin-bottom: 30px;
+                            input{
+                                height: 45px;
+                                border:1px solid #80808063;
+                            }
+                            // .form-control{
+                            //     border: 1px solid #80808052 !important;
+                            // }
+                            span{
+                                position: absolute;
+                                right: 19px;
+                                top: 9px;
+                            }
+                        }
+                        .service-date{
+                            border:1px solid #80808063 !important;
+                        }
+                    }
+                }
+                .booking-wrapper{
+                    padding: 0 30px;
+                    background-color: $title-color-white;
+                    .booking-info{
+                        .info-border{
+                            position: relative;
+                            &::before{
+                                content: '';
+                                display: block;
+                                position: absolute;
+                                background-color: #80808063;
+                                width: 100%;
+                                height: 1px;
+                                bottom: -30px;
+                            }
+                        }
+                        .tax-info{
+                            display: flex;
+                            column-gap: 130px;
+                            ul{
+                                li{
+                                    margin-bottom: 15px;
+                                }
+                                .total-amount{
+                                    padding: 30px 0 0 0;
+                                }
+                                .total{
+                                    position: relative;
+                                    &::after{
+                                        content: '';
+                                        display: block;
+                                        position: absolute;
+                                        background-color: #80808063;
+                                        width: 326px;
+                                        height: 1px;
+                                        top: 5px;
+                                    }
+                                }
+                            }
+                            &.tax-border{
+                                position: relative;
+                                &::before{
+                                    content: '';
+                                    display: block;
+                                    position: absolute;
+                                    border-right: 1px solid #80808063;
+                                    width: 100%;
+                                    height: 100%;
+                                    left: -20px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .select-payment{
+                    padding: 50px 30px;
+                    .payment{
+                        display: flex;
+                        .form-group{
+                            display: block;
+                            margin-bottom: 15px;
+                            label {
+                                position: relative;
+                                cursor: pointer;
+                                margin-left: 20px;
+                                &:before {
+                                    content: '';
+                                    -webkit-appearance: none;
+                                    background-color: $title-color-white;
+                                    border: 2px solid #e8e7ec;
+                                    padding: 5px;
+                                    display: inline-block;
+                                    position: absolute;
+                                    vertical-align: middle;
+                                    cursor: pointer;
+                                    margin-right: 5px;
+                                    top: 3px;
+                                    left: -22px;
+                                    border-radius: 50px;
+                                }
+                            }
+                            input {
+                                opacity: 0;
+                                &:checked+ {
+                                    label {
+                                        &:after {
+                                            content: '';
+                                            display: block;
+                                            position: absolute;
+                                            top: 6px;
+                                            left: -17px;
+                                            width: 3px;
+                                            height: 7px;
+                                            border: solid #ff533d;
+                                            border-width: 0 2px 2px 0;
+                                            transform: rotate( 45deg);
+                                        }
+                                        &:before {
+                                            background-color: $title-color-white;
+                                            border: 2px solid $title-color-hover;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .book-btn{
+                        border: 1px solid $title-color-hover;
+                        float: none;
+                        display: inline-block;
+                        .book-btn-hvr{
+                            border: 70px solid $title-color-hover;
+                        }
+                        &:hover{
+                            .book-btn-hvr{
+                                border: 0px solid $title-color-hover;
+                            }
+                            a{
+                                color: $title-color-hover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .reviews-wrapper{
+            .client-review{
+                background-color: $title-color-white;
+                h5{
+                    padding: 20px 40px;
+                    color: $title-color-white;
+                    font-weight: 500;
+                    background-color: $title-color-hover;
+                }
+                .review-gap{
+                    padding: 0 30px;
+                    form{
+                        padding: 50px 0 0 0;
+                        .form-expert{
+                            position: relative;
+                            input{
+                                border:1px solid #80808063;
+                                margin-bottom: 30px;
+                                height: 45px;
+                            }
+                            span{
+                                position: absolute;
+                                top: 10px;
+                                right: 25px;
+                            }
+                        }
+                        textarea{
+                            width: 100%;
+                            height: 130px;
+                            padding: 10px;
+                            border-radius: 5px;
+                            border:1px solid #80808063;
+                        }
+                    }
+                    .post-btn{
+                        border: 1px solid $title-color-hover;
+                        float: none;
+                        display: inline-block;
+                        .post-btn-hvr{
+                            border: 70px solid $title-color-hover;
+                        }
+                        &:hover{
+                            .post-btn-hvr{
+                                border: 0px solid $title-color-hover;
+                            }
+                            a{
+                                color: $title-color-hover;
+                            }
+                        }
+                    }
+                    .post-wrapper{
+                        padding: 50px 0;
+                        .post-review{
+                            display: flex;
+                            align-items: center;
+                            border-top: 1px solid #80808063;
+                            padding: 35px 0;
+                            .review-img{
+    
+                            }
+                            .review-text{
+                                padding: 0 25px;
+                                .post-name-head{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    .post-name{
+                                        h6{
+                                            float: left;
+                                            font-size: $font-size-18;
+                                            font-weight: $font-weight-medium;
+                                        }
+                                        span{
+                                            margin-left: 40px;
+                                        }
+                                    }
+                                    .post-rank{
+                                            ul{
+                                                display: flex;
+                                                li{
+                                                    margin-right: 5px;
+                                                    &.star{
+                                                        i{
+                                                            color: $star-color;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                    }
+                                }
+                                p{
+                                    margin: 10px 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.category-head{
+    background-color: #f3f3f3;
+    padding: 20px;
+    border-left: 5px solid $title-color-hover;
+}
+.expert-heading{
+    h6{
+        padding: 30px 0;
+        span{
+            margin-right: 5px;
+            i{
+                color: $title-color-hover;
+            }
+            &.booking-icon{
+                i{
+                    background-color: $title-color-hover;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 30px;
+                    color: $title-color-white;
+                }
+            }
+        }
+    }
+}
